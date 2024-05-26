@@ -9,15 +9,12 @@ The Auto Email Labeller project aims to address this issue by enabling users to 
 
 ## Implementation Specifics
 Higher Level Back End Architecture  
-  
-![image](https://github.com/Govind-S-B/llm-mail-autolabel/assets/62943847/b2fb87a3-18a1-4b49-bd45-fe18637ebdc3)
 
 - We tried to rely less on frameworks such as langchain and other AI frameworks since they were overkill, sticking to minimalism was a deliberate decision  
 - Providing an alternative AI Model that runs locally for privacy concerns
 
 This Repo focuses on the backend functionality of the Auto Labeller , the front end is in the works and at a very early stage  
   
-![image](https://github.com/Govind-S-B/llm-mail-autolabel/assets/62943847/e583d3c1-5893-431a-8c5b-28f95016fb96)
 - We decided to build this as a windows native application using flutter and using a unconventional file read-write system with sub process calls to the python process
 - This is to avoid the additional overhead of having an API Server on both ends , which again seemed like an overkill for such a project
 - Our focus is on having this run locally as an application and not a cloud first app
